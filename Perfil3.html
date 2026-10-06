@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profissional - Luan Costa</title>
+    <style>
+        /* 1. ESTILOS CSS BÁSICOS E PALETA DE CORES */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            border-bottom: 4px solid #3498db;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            color: #ecf0f1;
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background-color: #ffffff;
+            margin-bottom: 2rem;
+            padding: 1.8rem;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            display: block;
+            margin: 1rem 0;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* FORMULÁRIO E ELEMENTOS DE INTERAÇÃO */
+        form div {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* CAIXA DE FEEDBACK DINÂMICO (INTERATIVO) */
+        #painelFeedback {
+            display: none;
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .sucesso {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .erro {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #2c3e50;
+            color: #ffffff;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header>
+        <h1>Perfil de Luan Costa</h1>
+        <p>Desenvolvedor Web Front-End em formação</p>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        
+        <!-- Seção 1: Sobre Mim -->
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou apaixonado por tecnologia e estou me especializando na criação de páginas e aplicações web modernas. Tenho foco na construção de interfaces acessíveis, responsivas e amigáveis para os usuários.</p>
+            <p>Atualmente, venho aprofundando meus conhecimentos nas tecnologias fundamentais da Web (HTML5, CSS3 e JavaScript), além de explorar ferramentas e ecossistemas modernos do desenvolvimento front-end.</p>
+        </section>
+
+        <!-- Seção 2: Habilidades -->
+        <section>
+            <h2>Minhas Habilidades</h2>
+            <ul>
+                <li>Estruturação semântica de páginas com HTML5</li>
+                <li>Estilização e layouts responsivos com CSS3</li>
+                <li>Lógica de programação e interatividade com JavaScript</li>
+                <li>Conhecimento intermediário no Pacote Office</li>
+            </ul>
+        </section>
+
+        <!-- Seção 3: Imagem e Link Externo -->
+        <section>
+            <h2>Recursos e Inspirações</h2>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" alt="Espaço de trabalho com notebook exibindo código de programação">
+            <p>Para aprender mais sobre documentação e boas práticas do desenvolvimento web, consulte o site oficial do <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>.</p>
+        </section>
+
+        <!-- Seção 4: Formulário Interativo -->
+        <section>
+            <h2>Entre em Contato</h2>
+            <form id="formContato">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+                <!-- Botão com evento de clique -->
+                <button type="submit" id="btnEnviar">Enviar Mensagem</button>
+            </form>
+
+            <!-- Elemento dinamicamente modificado pelo JavaScript -->
+            <div id="painelFeedback"></div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Luan Costa - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- LÓGICA JAVASCRIPT (INTERATIVIDADE) -->
+    <script>
+        // Seleção dos elementos do DOM
+        const formContato = document.querySelector("#formContato");
+        const painelFeedback = document.querySelector("#painelFeedback");
+
+        // Evento de envio do formulário (clique no botão)
+        formContato.addEventListener("submit", function(event) {
+            // Impede o recarregamento padrão da página
+            event.preventDefault();
+
+            // Captura dos valores digitados
+            const nome = document.querySelector("#nome").value.trim();
+            const email = document.querySelector("#email").value.trim();
+            const mensagem = document.querySelector("#mensagem").value.trim();
+
+            // Validação com JavaScript
+            if (nome === "" || email === "" || mensagem === "") {
+                exibirFeedback("Por favor, preencha todos os campos do formulário antes de enviar.", "erro");
+                return;
+            }
+
+            // Validação de e-mail com expressão regular
+            const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            if (!emailValido) {
+                exibirFeedback("Por favor, informe um endereço de e-mail válido.", "erro");
+                return;
+            }
+
+            // Cálculo dinâmico com JavaScript
+            const totalCaracteres = mensagem.length;
+            const tempoEstimadoLeitura = Math.ceil(totalCaracteres / 15); // Cálculo estimado em segundos
+
+            // Variável de resposta personalizada
+            const mensagemConfirmacao = `Obrigado pelo contato, <strong>${nome}</strong>! Sua mensagem de <strong>${totalCaracteres} caracteres</strong> foi recebida com sucesso. Tempo estimado de leitura: <strong>${tempoEstimadoLeitura} segundos</strong>. Tempo estimado de resposta: até 24 horas.`;
+
+            // Alteração do conteúdo da página no DOM
+            exibirFeedback(mensagemConfirmacao, "sucesso");
+
+            // Limpa o formulário após o envio
+            formContato.reset();
+        });
+
+        // Função JavaScript reutilizável para alterar o conteúdo da página
+        function exibirFeedback(texto, tipo) {
+            painelFeedback.innerHTML = texto;
+            painelFeedback.className = tipo === "sucesso" ? "sucesso" : "erro";
+            painelFeedback.style.display = "block";
+        }
+    </script>
+</body>
+</html>
